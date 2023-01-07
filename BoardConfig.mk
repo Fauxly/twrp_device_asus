@@ -22,13 +22,13 @@ DEVICE_PATH := device/asus/P021
 ALLOW_MISSING_DEPENDENCIES := true
 
 # Architecture
-"TARGET_ARCH := x86
-TARGET_ARCH_VARIANT := generic
-TARGET_CPU_ABI := x86
-TARGET_CPU_ABI2 := armeabi-v7a
+TARGET_ARCH := x86
+TARGET_ARCH_VARIANT := x86-atom
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_ABI_LIST := x86,armeabi-v7a,armeabi
 TARGET_CPU_ABI_LIST_32_BIT := x86,armeabi-v7a,armeabi
-TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT := x86
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := P021
