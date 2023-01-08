@@ -18,3 +18,4 @@
 
 LOCAL_PATH := device/asus/P021
 
+PRODUCT_PROPERTY_OVERRIDES += ro.build.characteristics=tablet
