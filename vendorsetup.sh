@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo twrp_p021-userdebug
-add_lunch_combo twrp_p021-eng
+add_lunch_combo omni_p021-userdebug
+add_lunch_combo omni_p021-eng
