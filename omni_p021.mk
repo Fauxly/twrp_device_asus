@@ -30,7 +30,7 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := P021
-PRODUCT_NAME := omni_p021
+PRODUCT_NAME := omni_P021
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := P021
 PRODUCT_MANUFACTURER := asus
