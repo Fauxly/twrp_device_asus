@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/twrp_p021.mk
+     $(LOCAL_DIR)/omni_p021.mk
