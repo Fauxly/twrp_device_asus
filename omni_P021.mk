@@ -1,4 +1,4 @@
-#
+i#
 # Copyright (C) 2020 The Android Open Source Project
 # Copyright (C) 2020 The TWRP Open Source Project
 # Copyright (C) 2020 SebaUbuntu's TWRP device tree generator
@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from P021 device
-$(call inherit-product, device/asus/P021/P021.mk)
+$(call inherit-product, device/asus/P021/device.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
