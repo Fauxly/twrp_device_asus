@@ -46,29 +46,21 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive idle=halt androidboot.hardware=sofia3g nolapic_pm firmware_class.path=/system/vendor/firmware nolapic_timer x86_intel_xgold_timer=soctimer_only vmalloc=256M slub_max_order=0 build_version=3 debug notsc
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/bzImage
+TARGET_PREBUILT_KERNEL := device/asus/P021/kernel
 BOARD_KERNEL_BASE := 0x007f8000
 BOARD_KERNEL_PAGESIZE := 4096
-BOARD_RAMDISK_OFFSET := 0xffc08000
-BOARD_KERNEL_TAGS_OFFSET := 0xff808100
-BOARD_KERNEL_SECOND_OFFSET := 0xfff08000
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0xffc08000 --tags_offset 0xff808100
-BOARD_KERNEL_IMAGE_NAME := bzImage
 TARGET_KERNEL_ARCH := x86
 TARGET_KERNEL_HEADER_ARCH := x86
 TARGET_KERNEL_SOURCE := kernel/asus/P021
 TARGET_KERNEL_CONFIG := P021_defconfig
 
 # Recovery
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 17825792
-BOARD_FLASH_BLOCK_SIZE := 0
-BOARD_HAS_NO_REAL_SDCARD := true
-BOARD_SUPPRESS_SECURE_ERASE := true
-BOARD_HAS_NO_MISC_PARTITION := true
-BOARD_RECOVERY_SWIPE := true
-BOARD_USES_MMCUTILS := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_HAS_LARGE_FILESYSTEM := true
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 BOARD_SUPPRESS_EMMC_WIPE := true
-include $(DEVICE_PATH)/kernel.mk
 
 # Platform
 TARGET_BOARD_PLATFORM := sofia3g
