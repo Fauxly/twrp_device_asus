@@ -17,5 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/P021.mk
      $(LOCAL_DIR)/omni_P021.mk
