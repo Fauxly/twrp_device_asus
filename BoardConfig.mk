@@ -70,8 +70,7 @@ BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_RECOVERY_SWIPE := true
 BOARD_USES_MMCUTILS := true
 BOARD_SUPPRESS_EMMC_WIPE := true
-include $(LOCAL_PATH)/kernel.mk
-include device/generic/twrpbuilder/BoardConfig32.mk
+include $(DEVICE_PATH)/kernel.mk
 
 # Platform
 TARGET_BOARD_PLATFORM := sofia3g
