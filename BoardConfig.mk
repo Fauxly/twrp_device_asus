@@ -45,7 +45,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive idle=halt androidboot.hardware=sofia3g nolapic_pm firmware_class.path=/system/vendor/firmware nolapic_timer x86_intel_xgold_timer=soctimer_only vmalloc=256M slub_max_order=0 build_version=3 debug notsc
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/bzImage
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 BOARD_KERNEL_BASE := 0x007f8000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0xffc08000
@@ -54,7 +54,7 @@ BOARD_SECOND_OFFSET := 0xfff08000
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
-BOARD_KERNEL_IMAGE_NAME := bzImage
+BOARD_KERNEL_IMAGE_NAME := kernel
 TARGET_KERNEL_ARCH := x86
 TARGET_KERNEL_HEADER_ARCH := x86
 TARGET_KERNEL_SOURCE := kernel/asus/P021
