@@ -35,3 +35,16 @@ PRODUCT_BRAND := asus
 PRODUCT_MODEL := P021
 PRODUCT_MANUFACTURER := asus
 PRODUCT_RELEASE_NAME := asus P021
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE=P021 \
+    PRODUCT_NAME=WW_P021 \
+    PRIVATE_BUILD_DESC="WW_P021-user 5.0.2 LRX22G WW_P021-V4.6.2-20160126 release-keys"
+
+BUILD_FINGERPRINT := asus/WW_P021/P021:5.0.2/LRX22G/WW_P021-V4.6.2-20160126:user/release-keys
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=0 \
+    persist.sys.usb.config=mtp,adb \
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1
