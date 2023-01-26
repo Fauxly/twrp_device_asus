@@ -61,7 +61,7 @@ TARGET_KERNEL_SOURCE := kernel/asus/P021
 TARGET_KERNEL_CONFIG := P021_defconfig
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/default.prop
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
