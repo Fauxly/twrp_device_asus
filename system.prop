@@ -1,3 +1,7 @@
-#
-# system.prop for p021
-#
+#Debug stuff
+ro.secure=0 
+ro.adb.secure=0 
+ro.debuggable=1 
+service.adb.root=1 
+persist.service.adb.enable=1 
+persist.service.debuggable=1
