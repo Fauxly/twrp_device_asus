@@ -1,11 +1,13 @@
 #
-# Copyright 2013 The Android Open-Source Project
+# Copyright (C) 2020 The Android Open Source Project
+# Copyright (C) 2020 The TWRP Open Source Project
+# Copyright (C) 2020 SebaUbuntu's TWRP device tree generator
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+#     http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -19,12 +21,7 @@ DEVICE_PATH := device/asus/P021
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
-# inherit from the proprietary version
-#include vendor/asus/P021/BoardConfigVendor.mk
-
-#TARGET_NO_BOOTLOADER := true
-#TARGET_NO_RADIOIMAGE := true
-#TARGET_NO_RECOVERY := false
+# Architecture
 TARGET_ARCH := x86
 TARGET_ARCH_VARIANT := x86-atom
 TARGET_CPU_ABI := x86
@@ -33,6 +30,8 @@ TARGET_CPU_ABI2 := armeabi-v7a
 TARGET_CPU_ABI_LIST := x86,armeabi-v7a,armeabi
 TARGET_CPU_ABI_LIST_32_BIT := x86,armeabi-v7a,armeabi
 TARGET_CPU_SMP := true
+
+#TARGET_CPU_SMP := true
 
 TARGET_BOARD_PLATFORM := sofia3g
 TARGET_DROIDBOOT_LIBS := libintel_droidboot
